@@ -1,0 +1,21 @@
+{% extends 'beewasp/base.html' %}
+{% block title %}ミツバチ・スズメバチ推定アプリメニュー{% endblock %}
+
+{% block content %}
+<div>
+    <h4>みつばち or スズメバチ<br>推定アプリ</h4>
+    <p>画像ファイルを選択して<br>推定ボタンをクリック!</p>
+    <form action="{% url 'beewasp:predict' %}" method="post" class="form" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+        <div class="custom-file">
+            {{ form.image }}
+            <label class="custom-file-label" for="customFile">
+                推定したいファイルを選択してください。
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">推定する！</button>
+    </form> 
+</div>
+{% endblock %}

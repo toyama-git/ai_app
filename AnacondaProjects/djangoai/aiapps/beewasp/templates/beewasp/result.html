@@ -1,0 +1,48 @@
+{% extends 'beewasp/base.html' %}
+{% block title %}ミツバチ・スズメバチ推定結果{% endblock %}
+
+{% block content %}
+<div>
+    <h4>みつばち・スズメバチ<br>推定結果</h4>
+    <div>
+        <img class='preview-img' src={{ photo_data }} ></img>
+    </div>
+    <div>
+        <p class="photo-name">{{ photo_name }}</p>
+    </div>
+    <dl>
+        <dt>推定ラベル</dt>
+        <dd>{{ predicted }}</dd>
+    </dl>
+    <dl>
+        <dt>推定確率</dt>
+        <dd>{{ percentage }} %</dd>
+    </dl>
+    <div>
+
+    </div>
+    <!--<table class='table'>
+        <tbody>
+            <tr>
+                <td>ファイル名</td>
+                <td>{{ photo_name }}</td>
+            </tr>
+            <tr>
+                <td>画像ファイル</td>
+                <td><img class='preview-img' src={{ photo_data }} ></img></td>
+            </tr>
+            <tr>
+                <td>推定ラベル</td>
+                <td>{{ predicted }}</td>
+            </tr>
+            <tr>
+                <td>推定確率</td>
+                <td>{{ percentage }} %</td>
+            </tr>
+        </tbody>
+    </table>-->
+
+    <a href = "{% url 'beewasp:index' %}" class="btn btn-primary">画像選択メニューに戻る</a>
+
+</div>
+{% endblock %}

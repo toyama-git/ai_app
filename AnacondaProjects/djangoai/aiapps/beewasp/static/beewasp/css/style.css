@@ -1,0 +1,93 @@
+body{
+    background-color: #ffc107;
+}
+.h4, h4 {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: bold;
+    margin: 5vw 0;
+}
+p{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 1.4rem;
+}
+p.photo-name{
+    text-align: right;
+    margin-bottom: 3vw;
+    font-size: 1.2rem;
+}
+img{
+    width: 100%;
+    border: solid 6px #ffffff;
+}
+.navbar-brand{
+    margin: 0 auto;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 55%;
+    margin-bottom: 5vw;
+}
+.bg-light {
+    background-color: #4e2a00 !important;  
+}
+.navbar-light .navbar-brand {
+    color: #ffffff;
+}
+.ellipse{
+height:150px;
+  width:80%;
+  border-radius: 50%;
+  background-color: #ffc107;
+}
+.table td, .table th {
+    white-space: nowrap;
+}
+dl{
+    display: flex;
+    font-size: 1.4rem;
+    border-bottom: dotted 1px #4e2a00;
+}
+dt{
+    margin-right: 1em;
+    font-weight: normal;
+}
+dd{
+    font-weight: 600;
+}
+.custom-file-input {
+   /* width: 60%;*/
+}
+.custom-file-label {
+    background-color: #ffeeb9;
+    border: none;
+}
+.custom-file-label::after {
+background-color: #ab5924;
+color: #fff;
+height: auto;
+cursor: pointer;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #212529;
+    border-color: #212529;
+    display: inherit;
+    margin: 0 auto;
+    width: 60%;
+    padding: 15px 20px;
+    margin-top: 5vw;
+}
+.btn-primary:hover {
+    background-color: #3e4144;
+    border-color: #3e4144;
+}
+.btn-primary:focus {
+    background-color: #3e4144;
+    border-color: #3e4144;
+}
+.btn-primary:active {
+    background-color: #3e4144 !important;
+    border-color: #3e4144 !important;
+}
